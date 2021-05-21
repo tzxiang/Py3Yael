@@ -4,7 +4,7 @@ This is a modified Yael implementation for Python 3.x based on the original impl
 
 ## Description
 
-Yael is a library implementing computationally intensive functions used in large scale image retrieval, such as neighbor search, clustering and inverted files. The library offers interfaces for C, Python and Matlab. Here, we only focus on C and Python interfaces. This is just for 
+Yael is a library implementing computationally intensive functions used in large scale image retrieval, such as neighbor search, clustering and inverted files. The library offers interfaces for C, Python and Matlab. Here, we only focus on C and Python interfaces.   
 
 - *Py2_yael_v438*: original version 4.38 which supports python 2.x
 - *py3_yael_v438*: modified version 4.38 which support python 3.x
@@ -96,16 +96,12 @@ To make the yael library work for python 3.x, some changes should be made:
 ### Dependencies Installation
 The Yael library requires gfortran, blas, lapack, swig, and python.
 
-
-
 **1. Blas and Lapack**
 
 ```
 $ sudo apt-get install gfortran
 $ sudo apt-get install libblas-dev liblapack-dev # may have been installed
 ```
-
-
 
 **2. Swig**
 
@@ -143,8 +139,6 @@ Then open `.bashrc` and add the path `PATH=$PATH:/usr/local/share/swig/4.0.2`. T
 $ source ~/.bashrc
 $ swig -version  # check if successful
 ```
-
-
 
 **3. Python-dev**
 
