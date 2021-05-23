@@ -87,8 +87,8 @@ To make the yael library work for python 3.x, some changes should be made:
   - In `threads.py`, change `def f(self,(i,x))` to `def f(self, v):(i,x)=v`.
   - In `threads.py`, the import module "`thread`" is renamed to "`_thread`" in python3, so change to `_thread` and modify the corresponding calling functions.
   - In `learn_gmm.py`, modify `args = sys.argv[:1]` to `args = sys.argv[1:]`.  
-
-   
+  
+- In `gmm.c`, in line 513 (iteration end condition), chang `if (key == old_key)` to `if ((long int)(key*1e4) == (long int)(old_key*1e4))`, to make it convergence quickly. 
 
 
 ## Installation
