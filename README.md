@@ -1,6 +1,6 @@
 # Py3YAEL
 
-This is a modified Yael implementation for Python 3.x based on the original implementation. Just for academic exchange only.
+This is a modified Yael implementation for Python 3.x based on the original version. Just for academic exchange only.
 
 ## Description
 
